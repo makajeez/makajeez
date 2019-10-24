@@ -115,3 +115,11 @@ footer {
     text-align: center;
     padding: 16px;
 }
+
+footer li {
+    list-style: none;
+    display: grid;
+    grid-gap: 20px;
+    font-style: normal;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+} 
