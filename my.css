@@ -12,7 +12,7 @@ body {
 .nav ul {
     list-style: none;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     font-style: normal;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -203,8 +203,10 @@ input :hover{
     padding: 20px;
 }
 
-.cont-container {
-    
+h6 {
+  float: right;
+  font-size: 20px;
+  padding: 10px 15px;
 }
 
 
