@@ -22,6 +22,12 @@ body {
     grid-gap: 20px;
 }
 
+.row-s {
+    width: 100%;
+    margin-top: 0;
+}
+
+
 .nav a {
     background: rgba(255, 115, 0, 0.699);
     color: aliceblue;
