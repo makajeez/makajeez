@@ -23,33 +23,33 @@ body {
 }
 
 .nav a {
-    background: rgba(105, 103, 103, 0.452);
+    background: rgba(255, 115, 0, 0.699);
+    color: aliceblue;
     display: block;
     text-decoration: none;
     padding: 0.8px;
     text-align: center;
-    color: rgb(255, 153, 0);
     text-transform: uppercase;
     font-size: 17.1px;
     /* box-shadow: rgba(165, 42, 42, 0.527); */
 }
 
 .nav a:hover {
-    background: rgba(255, 115, 0, 0.699);
-    color: aliceblue;
+    color: rgba(255, 115, 0, 0.699);
+    background: rgba(105, 103, 103, 0.452);
 }
 
 .top-container {
     display: grid;
-    grid-gap: 20px;
+    /* grid-gap: 20px;
     grid-area: 
     'showcase showcase showcase'
     'showcase showcase top-box a'
     'showcase showcase top-box-b'
-    'showcase showcase top-box-c'; 
+    'showcase showcase top-box-c';  */
 }
 
-.showcase {
+/* .showcase {
     grid-area: showcase;
     min-height: 400px;
     background: rgba(255, 153, 0, 0.712);
@@ -60,8 +60,26 @@ body {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    /* box-shadow: rgba(165, 42, 42, 0.527); */
+    /* box-shadow: rgba(165, 42, 42, 0.527); *//*
     
+} */
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-gap: 15px; */
+}
+
+.grid1 .showcase {
+    min-height: 400px;
+    background: rgba(255, 153, 0, 0.712);
+    background-size: cover;
+    background-position: center;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* box-shadow: rgba(165, 42, 42, 0.527); */
 }
 
 .showcase h1 {
@@ -99,6 +117,10 @@ body {
     background: rgba(255, 153, 0, 0.151);
     text-align: center;
     padding: 24px 32px;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .skills-box {
@@ -164,7 +186,7 @@ label {
     display: inline-block;
 }
 
-input {
+input, textarea {
     background-color: aliceblue;
     color: black;
     padding: 12px 20px;
@@ -181,6 +203,11 @@ input :hover{
     padding: 20px;
 }
 
+.cont-container {
+    
+}
+
+
 .text {
     margin-top: 6px;
 }
@@ -189,7 +216,7 @@ input :hover{
 }
 h4 {
     text-align: center;
-    color: rgb(189, 79, 5);
+    color: black;
     font-weight: 100%;
     font-size: 50px;
     padding-bottom: 30px;
