@@ -43,7 +43,8 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-area: 
-    'showcase showcase top-box-a'
+    'showcase showcase showcase'
+    'showcase showcase top-box a'
     'showcase showcase top-box-b'
     'showcase showcase top-box-c'; 
 }
@@ -51,7 +52,7 @@ body {
 .showcase {
     grid-area: showcase;
     min-height: 400px;
-    background: tan;
+    background: rgba(255, 153, 0, 0.712);
     background-size: cover;
     background-position: center;
     padding: 48px;
@@ -60,6 +61,7 @@ body {
     align-items: start;
     justify-content: center;
     /* box-shadow: rgba(165, 42, 42, 0.527); */
+    
 }
 
 .showcase h1 {
@@ -93,13 +95,17 @@ body {
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
 .box {
-    background: rgba(255, 153, 0, 0.712);
+    background: rgba(255, 153, 0, 0.151);
     text-align: center;
     padding: 24px 32px;
 }
 
+.skills-box {
+    background: rgba(255, 153, 0, 0.712);
+    text-align: center;
+    padding: 24px 32px;
+}
 .info {
     background: rgba(128, 128, 128, 0.712);
     padding: 48px;
@@ -118,11 +124,25 @@ footer {
 
 footer li {
     list-style: none;
-    display: grid;
+    display: inline-block;
     grid-gap: 20px;
     font-style: normal;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 30px;
 } 
+
+
+footer a {
+  text-decoration: none;
+  display:block;
+  font-size: 20px;
+  z-index: 999;
+  box-shadow: black;
+}
+
+footer i:hover {
+  background: black;
+  color:rgb(182, 93, 61);
+}
 
 * {
     box-sizing: border-box;
