@@ -1,80 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="my.css" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amaranth|Lilita+One&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/b6d263b9dd.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <title>Portia Mkhabela</title>
 </head>
 
 <body>
-  <div class="wapper">
-  <header>
-    <div class="nav">
-      <div class="logo">
-        <img src="img/my logo.png" alt="logo" height="130px">
-      </div>  
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="aboutme.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line1"></div>
-        <div class="line1"></div>
+  <div class="container">
+    <div class="nav-bar">
+      <div class="nav-logo">
+        <img src="img/my logo~3.png">
       </div>
-
-    </div>
-  </header>
-
-  <section class="top-container">
-    <div class="grid1">
-      <div class="box showcase">
-        <h2>I DIDN'T INVENT THE INTERNET,</h2>
-        <h2>I INTEND ON MAKING IT LOOK GOOD!!</h2>
+      <div class="nav-links" id="mobileMenu">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <input type="checkbox" id="check">
+        <label for="c heck">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="img/burger-removebg-preview.png" class="burger" onclick="showMenu()">
       </div>
     </div>
 
-    <!-- <div>
-          <p>
-            I'm Portia Mkhabela an aspiring Web Developer born in Gauteng, raised in KwaZulu-Natal and currently living in
-            Joburg.
-          </p>
-        </div> -->
+    <section id="home">
+      <div class="hero">
+        <h1>
+          I AM PORTIA MKHABELA, A JUNIOR WEB DEVELOPER. <br>I DIDN'T INVENT THE INTERNET, <br> BUT I INTEND ON MAKING IT
+          LOOK GOOD!
+        </h1>
+        <div class="button">
+          <span></span><span></span><span></span><span></span>
+          <p>GET IN TOUCH</p>
+
+        </div>
+      </div>
+    </section> 
+
+    <section class="boxes" id="about">
+      <h2 class="heading">ABOUT</h2>
+      <div>
+        <img src="img/IMG-20200129-WA0006.jpg" alt="about pic" width="270px" class="pic">
+      </div>
+
+      <div class="box">
+        <h2>ABOUT</h2>
+
+        <p1>Hello<br>Like I said I'm Portia Mkhabela a Zulu Web Developer with 3 years of experience in coding.<br>
+          And I sorta have a thing for drawing art.<br>
+          I enjoy taking complex problems and turning them into simple and beautiful code. I love the logic and
+          structure of
+          coding and always strive to write elegant and different code.</p1>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="details">
+        <h2>SKILLS</h2>
+
+        <div class="boxes">
+          <div class="skills-box">
+            <img src="icons/104494-256.png" alt="" class="image">
+            <br>
+            <div class="overlay">
+              <h4>HTML</h4>
+              <p2>I understand the basics of coding and the markup language.</p2>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <img src="icons/3209606-256.png" alt="" class="image" width="200px">
+            <br>
+            <div class="overlay">
+              <h4>CSS</h4>
+              <p2>I'm familiar with the syntax and coding of css</p2>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <img src="icons/3209601-256.png" alt="" class="image width=" 200px">
+            <br>
+            <div class="overlay">
+              <h4>PHOTOSHOP</h4>
+              <p2>I know my way around photoshop which helps me translate and code design.</p2>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <img src="icons/2166674-512.png" alt="" class="image" width="200px">
+            <br>
+            <div class="overlay">
+              <h4>JAVASCRIPT</h4>
+              <p2>Still at the beginner stage but slowly adapting to the language.</p2>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="details">
+        <h2>PORTFOLIO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ut labore consequuntur cum excepturi quasi
+          nulla? Debitis tempora quaerat delectus, ab magnam animi id atque non temporibus illum perferendis. Fuga!
+        </p>
+        <br>
+      </div>
+    </section>
+
+    <section id="contact">
+    
+        <h1>CONTACT ME</h1>
+        <p1> I am very approachable and would love to speak to you. Feel free to send me an email, connect through
+          linkedin or simply complete the enquiry form.</p1>
+        <br>
+        <ul>
+          <a href="https://www.linkedin.com/in/portia-n-1479a3119/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Portia-arch"><i class="fab fa-github"></i></a>
+          <a href="mailto:portia.mkhabela@umuzi.org subject=subject text"><i class="fas fa-at"></i></a>
+        </ul>
 
   </section>
 
-  <section class="info">
-      <img src="" alt="">
-    <div>
-      <h1>
-        Watch The Space
-      </h1>
-      <p1>
-       I'm developing a creative technology space that works and engages with beautiful and driven coding technologies. With an emphasis on being lean and egile.
-      </p1>
-    </div>
-  </section>
 
   <footer>
     <p>
-      Portia Mkhabela &COPY; 2019
-      <ul>
-        <a href="https://www.facebook.com/profile.php?id=100008210868571&ref=bookmarks"><i
-            class="fab fa-facebook-square"></i></a>
-        <a href="https://www.linkedin.com/in/portia-n-1479a3119/"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/Portia-arch"><i class="fab fa-github"></i></a>
-        <a href="mailto:portia.mkhabela@umuzi.org subject=subject text"><i class="fas fa-at"></i></a>
-      </ul>
+        Portia Mkhabela &COPY; 2019
+        <ul>
+            <a href="https://www.facebook.com/profile.php?id=100008210868571&ref=bookmarks"><i
+                    class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/portia-n-1479a3119/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Portia-arch"><i class="fab fa-github"></i></a>
+            <a href="mailto:portia.mkhabela@umuzi.org subject=subject text"><i class="fas fa-at"></i></a>
+        </ul>
     </p>
   </footer>
-</div>
+
+  </div>
+
+  <script type="text/javascript" src="functionality.js"></script>
+
 </body>
+
 </html>
