@@ -248,9 +248,7 @@ p1 {
 
 /*Skills-page*/
 .skills-box {
-  /* background: rgba(255, 153, 0, 0.712); */
   text-align: center;
-  /* padding: 24px 12px 15px; */
   color: #000;
   position: relative;
   width: 100%;
@@ -401,7 +399,7 @@ footer p ul {
   }
 
   #portfolio {
-    margin-top: -350px;
+    margin-top: -180px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
