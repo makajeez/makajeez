@@ -121,38 +121,39 @@ section {
 
 /*main-heading*/
 h1 {
-  font-size: 45px;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 153, 0, 0.863);
-  margin-bottom: 4%;
-  background: url(img/porschee-removebg-preview\\(1\).png);
-  -webkit-background-clip: text;
-  background-position: 0 0;
-  animation: back 20s linear infinite;
-}
+     font-size: 45px;
+     color: transparent;
+     -webkit-text-stroke: 1px rgba(255, 153, 0, 0.863);
+     margin-bottom: 4%;
+     background: url(img/porschee-removebg-preview\ \(1\).png);
+     -webkit-background-clip: text;
+     background-position: 0 0;
+     animation: back 20s linear infinite;
+ }
 
-h3 {
-  font-size: 65px;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 153, 0, 0.863);
-  margin-bottom: 4%;
-  background: url(img/porschee-removebg-preview\\(1\).png);
-  -webkit-background-clip: text;
-  background-position: 0 0;
-  animation: back 20s linear infinite;
-}
+
+ h3 {
+     font-size: 65px;
+     color: transparent;
+     -webkit-text-stroke: 1px rgba(255, 153, 0, 0.863);
+     margin-bottom: 4%;
+     background: url(img/porschee-removebg-preview\ \(1\).png);
+     -webkit-background-clip: text;
+     background-position: 0 0;
+     animation: back 20s linear infinite;
+ }
 
 /*Headings*/
-section h2 {
-  font-size: 35px;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 153, 0, 0.863);
-  margin-bottom: 4%;
-  background: url("img/porschee-removebg-preview\\(1\).png");
-  -webkit-background-clip: text;
-  background-position: 0 0;
-  animation: back 20s linear infinite;
-}
+ section h2 {
+     font-size: 35px;
+     color: transparent;
+     -webkit-text-stroke: 1px rgba(255, 153, 0, 0.863);
+     margin-bottom: 4%;
+     background: url(img/porschee-removebg-preview\ \(1\).png);
+     -webkit-background-clip: text;
+     background-position: 0 0;
+     animation: back 20s linear infinite;
+ }
 
 section p {
   font-size: 1.5rem;
@@ -161,6 +162,10 @@ section p {
   100% {
     background-position: 2000px 0;
   }
+}
+p1 {
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 /*main-button*/
@@ -173,6 +178,15 @@ section p {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+}
+
+#contact {
+ margin: 130px;
+ margin-left: 20px;
+}
+
+#button {
+  margin-top: 20px;
 }
 
 .button p {
@@ -231,8 +245,6 @@ section p {
   text-align: center;
 }
 
-.pic {
-}
 
 /*Skills-page*/
 .skills-box {
@@ -246,7 +258,6 @@ section p {
 
 .skills-box h1 {
   font-size: 30px;
-  font-family: ;
 }
 
 .image {
@@ -274,34 +285,6 @@ section p {
 
 .heading {
   display: none;
-}
-
-/* Contact-form*/
-input,
-textarea {
-  width: 50%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input,
-textarea {
-  background-color: aliceblue;
-  color: black;
-  padding: 12px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input :hover {
-  background-color: aquamarine;
 }
 
 i {
@@ -367,6 +350,7 @@ span:nth-child(4) {
 footer {
   color: #ccc;
   text-align: center;
+  /* margin: 100px; */
   padding-bottom: 16px;
 }
 
@@ -374,6 +358,7 @@ footer p ul {
   padding: 15px;
   height: 20px;
   width: 20px;
+ 
 }
 
 /*Media-queries*/
@@ -389,7 +374,8 @@ footer p ul {
   }
 
   .heading {
-    display: inline;
+    display: block;
+    /* text-align: center; */
   }
 
   .boxes .box h2 {
@@ -406,11 +392,16 @@ footer p ul {
     margin-bottom: 10px;
   }
 
+  #about {
+    display: contents;
+  }
+
   #skills {
-    margin-top: 450px;
+    margin-top: -250px;
   }
 
   #portfolio {
+    margin-top: -350px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
@@ -432,20 +423,14 @@ footer p ul {
     text-align: center;
     flex-direction: column;
     display: none;
-    /* grid-template-columns: 1fr 1fr; */
   }
 
-  .col,
-  .input,
-  .input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }
 }
 
-@media (max-width: 1118px) {
-  .nav-logo {
-    left: 8%;
+@media (max-width: 360px) {
+  #skills {
+    margin-top: 10px;
+    margin-bottom: 450px;
   }
 }
 
