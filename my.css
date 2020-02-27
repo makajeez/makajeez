@@ -21,6 +21,39 @@ body {
   scroll-snap-type: y mendatory;
 }
 
+.loader {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(255, 153, 0, 0.863);
+  top: 50%;
+  left: 50%;
+  width: 1500px;
+  height: 1500px;
+  transform: translate(-50%, -50%);
+}
+
+.loader img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes fadeOut{
+  100% {
+    opacity: 0;
+    visibility: hidden;
+
+  }
+}
+
 #check {
   display: none;
 }
@@ -182,8 +215,18 @@ p1 {
 
 #contact {
  margin: 130px;
- margin-left: 20px;
+ margin-left: 0px;
 }
+
+#skils{
+   margin: 130px;
+   margin-left: 0px;
+}
+
+/* #portfolio{
+   margin: 130px;
+   margin-left: 0px;
+} */
 
 #button {
   margin-top: 20px;
@@ -400,6 +443,7 @@ footer p ul {
   }
 
   #portfolio {
+    height: 80vh;
     margin-top: -180px;
     display: grid;
     grid-template-rows: 1fr 1fr;
