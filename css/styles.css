@@ -9,15 +9,21 @@ html {
     height: 100%;
     margin: 0px auto;
 }
+#scrl:focus {
+    color: darkorange!important;
+}
+.activ {
+    color: darkorange!important;
+}
 
 body {
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     color: #000;
     background-color: #FFF;
     margin: 0px auto;
     position: relative;
-    font-smoothing: antialiased;
+    font-smooth: antialiased;
     -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -379,9 +385,10 @@ a.active {
 /*Navbar Logo Image*/
 
 .navbar-custom a img {
-    width: 125px;
+    /* width: 125px; */
+    height: inherit;
     display: inline;
-    margin-top: -49px;
+    margin-top: -15px;
     margin-right: 15px;
 }
 
@@ -485,7 +492,7 @@ a.active {
 /* ======= INTRODUCTION ======= */
 
 #intro {
-    background: url(../img/wallpaper.jpg);
+    background: url(../img/wallpaper1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -631,6 +638,11 @@ a.fa.fa-angle-down:focus {
     margin-bottom: 20px;
     text-transform: capitalize;
 }
+.hove:hover {
+    color: darkorange;
+    font-size: large;
+    transition: all .5s ease-in-out;
+}
 
 #about #tl-dr h5 {
     font-weight: 300;
@@ -641,7 +653,7 @@ a.fa.fa-angle-down:focus {
 }
 
 .tldr-proc {
-    width: 30%;
+    width: 20%;
     display: inline-block;
     vertical-align: top;
 }
@@ -1079,9 +1091,9 @@ a.fa.fa-angle-down:focus {
     height: auto;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
 }
 
 .skills-section .skill-icon img:hover {
@@ -1194,7 +1206,7 @@ img#nu-logo {
 /* ======= RESUME ======= */
 
 #resume {
-    background: url(../img/laptop-blur.jpg);
+    background: url(../img/header-bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
