@@ -499,6 +499,7 @@ a.active {
     background-repeat: no-repeat;
     background-color: #000;
     color: #000;
+    width: 100vw;
 }
 
 #intro .overlay {
