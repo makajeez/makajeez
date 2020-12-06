@@ -499,7 +499,7 @@ a.active {
     background-repeat: no-repeat;
     background-color: #000;
     color: #000;
-    width: 100vw;
+    width: 110vw;
 }
 
 #intro .overlay {
@@ -1214,6 +1214,7 @@ img#nu-logo {
     background-repeat: no-repeat;
     background-color: #000;
     color: #fff;
+    width: 110vw;
 }
 
 #resume .overlay {
