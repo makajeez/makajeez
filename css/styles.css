@@ -362,8 +362,10 @@ a.fa.fa-angle-down:focus {
     margin-bottom: 20px;
     text-transform: capitalize;
 }
-.hove:hover {
+.hove {
     color: darkorange;
+}
+.hove:hover {
     font-size: large;
     transition: all .5s ease-in-out;
 }
