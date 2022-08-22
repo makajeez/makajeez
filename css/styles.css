@@ -31,7 +31,7 @@ button:focus,
     outline: 0 !important;
 }
 .spacer-10 {
-    padding: 10px;
+    margin: 100px;
 }
 
 h1,
@@ -222,7 +222,7 @@ a.active {
     background-repeat: no-repeat;
     background-color: #000;
     color: #000;
-    width: 110vw;
+    width: 100vw;
 }
 
 #intro .overlay {
@@ -929,7 +929,7 @@ img#nu-logo {
     background-repeat: no-repeat;
     background-color: #000;
     color: #fff;
-    width: 110vw;
+    width: 100vw;
 }
 
 #resume .overlay {
