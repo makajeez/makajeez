@@ -7,8 +7,8 @@
     <meta name="author" content="Buhari Ahmed Alhassan"/>
     <meta name="description" content="Web developer, Angular and all there is" />
     <meta property="og:title" content="Buhari Ahmed Alhassan's Personal Website" />
-    <link rel="icon" type="image/jfif" scr="img/icon.jfif"></link>
-    <link rel="canonical" href="http://makajeez.github.io">
+    <link rel="icon" type="image/jfif" href="img/icon.jfif">
+    <link rel="canonical" href="https://makajeez.github.io">
     <link rel="stylesheet" href="https://unpkg.com/emoji.css/dist/emoji.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
@@ -62,11 +62,11 @@
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-                        <li><a class="page-scroll" href="#about" id="scrl">About</a></li>
-                        <li><a class="page-scroll" href="#services" id="scrl">Passions</a></li>
-                        <li><a class="page-scroll" href="#experience" id="scrl">Skills</a></li>
-                        <li><a class="page-scroll" href="#portfolio" id="scrl">Work</a></li>
-                        <li><a class="page-scroll" href="#contact" id="scrl">Contact</a></li>
+                        <li><a class="page-scroll" href="#about">About</a></li>
+                        <li><a class="page-scroll" href="#services">Passions</a></li>
+                        <li><a class="page-scroll" href="#experience">Skills</a></li>
+                        <li><a class="page-scroll" href="#portfolio">Work</a></li>
+                        <li><a class="page-scroll" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -257,9 +257,9 @@
                             <!-- Instagram Button -->
                             <li><a id="instagram" href="https://instagram.com/makajeez" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             <!-- GitHub Button -->
-                            <li><a id="github" href="https://github.com/makajeez" target="_blank"><i class="fa fa-github"></i></a></li>
+                            <li><a id="github-link" href="https://github.com/makajeez" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
                             <!-- LinkedIn Button -->
-                            <li><a id="linkedin" href="https://www.linkedin.com/in/buhariahmedalhassan" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a id="linkedin" href="https://www.linkedin.com/in/buhariahmedalhassan" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                         <div class="page-scroll">
                             <a id="to-top" class="page-scroll" href="#page-top">
@@ -278,23 +278,18 @@
         </footer>
         <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/jquery.scrollTo.min.js"></script>
-        
-        <!-- Core JavaScript Files -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Helpers -->
-        <script src="js/scrolling-nav.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/modernizr.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/custom.js"></script>
         <script>
-            const date =document.querySelector('#date').innerHTML = new Date().getFullYear();
+            document.querySelector('#date').textContent = new Date().getFullYear();
             
             $('[data-spy="scroll"]').on('activate.bs.scrollspy', function() {
                 const active = document.querySelector('.active');
-                active.classList.add('activ');
+                if (active) {
+                    active.classList.add('activ');
+                }
             });
         </script>
         <!-- *********************************************
