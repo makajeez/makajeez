@@ -1305,7 +1305,8 @@ ul.social-buttons li a:active {
 .portfolio-card-footer {
     padding: 14px 24px;
     border-top: 1px solid #f0f0f0;
-    text-align: left;
+    display: flex;
+    justify-content: space-around;
 }
 
 .proj-link {
